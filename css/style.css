@@ -17,10 +17,13 @@ header h2 {
 .cursiveBody h1 h2 h3{
     font-family: 'Lobster', cursive;
 }
-footer {
+.bg-footer{
     background: linear-gradient(to right, #141e30, #243b55); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
     padding: 20px 0;
+}
+.site-footer{
+    background-image: linear-gradient(#b7a8f8, white);
+    padding: 20px 0px;
 }
 
 .jumbotron {
