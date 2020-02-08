@@ -26,7 +26,7 @@
 
     <header class="jumbotron jumbotron-fluid">
         <div class="container">
-            <div class="row row-content align-items-center ">
+            <div class="row row-content">
                 <div class="col-4 col-sm-3 col-md-2 align-self-center">
                     <img src="img/logo.png" class="img-fluid"  />
                  </div>
@@ -34,6 +34,10 @@
                     <h1>NuCamp</h1>
                     <h2>a better way to camp</h2>
                 </div>
+                <div class="col col-md-4 col-xl-2  ">
+                    <a href="#reserveForm" type="button" class="mt-sm-0 mt-3 btn btn-info">Reserve Campsite</a>
+                </div>
+
             </div>
 
         </div>
@@ -56,9 +60,9 @@
         </div>
     </nav>
 
-    <div class="container  mt-5 mb-5">
+    <div class="container mt-5 mb-5">
         <div class="row">
-            <div class="col-sm-4 order-sm-last col-md-3">
+            <div class="col-sm-4 order-sm-last col-md-3 align-self-center">
                 <h2 class="text-sm-right">Discover & Review</h2>
             </div>
             <div class="col">
@@ -73,16 +77,24 @@
         </div>
 
         <div class="row">
-            <div class="col-sm-4 col-md-3">
+            <div class="col-sm-4 col-md-3 align-self-center">
                 <h2>Featured Campsites</h2>
             </div>
             <div class="col">
-                <h3>React Lake Campground</h3>
-                <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+                <div class="media ">
+                    
+                    <div class="media-body align-self-center">
+                        <h3>React Lake Campground</h3>
+                        <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+
+                    </div>
+                <img  class=" d-flex ml-3 img-thumbnail" src="img/react-lake-thumb.jpg" alt="">
+                </div>
+                
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-4  order-sm-last col-md-3">
+            <div class="col-sm-4  order-sm-last col-md-3 align-self-center">
                 <h2 class="text-sm-right">Our Community Partners</h2>
             </div>
             <div class="col">
@@ -94,8 +106,45 @@
                     </div>
                 </div>
             </div>
+
         </div>
-    </div>
+
+    </div><!--END OF CONTAINER -->
+    <div class="container">
+        <div class="row-content align-items-center">
+            <div class=" col-xs-6 mx-auto">
+                    <div class="card">
+                        <h3 class="card-header bg-info text-light">Reserve a Campsite</h3>
+                        <div class="card-body">
+                            <form action="" id="reserveForm">
+                                <div class="form-row align-items-center mb-2">
+                                    <label for="numCampers" class="col-sm-6 col-form-label">Number of Campers</label>
+                                    <div class="col-sm-6 ">
+                                    <select name="numCampers" id="numCampers" class="form-control">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                    </select>
+                                    </div>
+                                </div><!--END OF FORM-ROW-->
+
+                                <div class="form-row aligin-items-center mb-2">
+                                    <label for="Date" class="col-sm-6 col-form-label">Date</label>
+                                    <div class="col-sm-6 col-form-label ">
+                                        <input class="form-control" type="date" name="date" id="date">
+                                    </div>
+                                </div><!--END OF FORM-ROW-->
+                                <button class="btn btn-primary" type="submit">Reserve</button>
+                            </form>
+
+                        </div>
+                    </div><!--END OF CARD-->
+            </div>
+        </div>
+    </div><!--END OF CONTAINER -->
     <footer class="bg-footer">
         <div class="container">
             <div class="row text-light" >
