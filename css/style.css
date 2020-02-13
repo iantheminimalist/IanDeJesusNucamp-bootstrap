@@ -5,7 +5,6 @@ body {
 h1, h2, h3 {
     /*font-family: 'Montserrat', sans-serif;*/
     font-family: 'Lobster', cursive;
-
 }
 
 h2 {
@@ -26,7 +25,11 @@ header h2 {
     background-image: linear-gradient(#b7a8f8, white);
     padding: 20px 0px;
 }
-
+.tab-content {
+    border: 1px solid #DDD;
+    border-top: none;
+    padding: 10px;
+}
 .jumbotron {
     padding: 30px;
     background: linear-gradient(to right, #141e30, #243b55); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
