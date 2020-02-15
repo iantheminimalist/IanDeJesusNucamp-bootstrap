@@ -49,14 +49,71 @@
                     <h2>a better way to camp</h2>
                 </div>
                 <div class="col col-md-4 col-xl-2  ">
-                    <a href="#reserveForm" type="button" class="mt-sm-0 mt-3 btn btn-info" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Or call us at <br /><strong>1-206-555-1234</strong>" >Reserve Campsite</a>
+                    <!-- <a href="#reserveForm" type="button" class="mt-sm-0 mt-3 btn btn-info" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Or call us at <br /><strong>1-206-555-1234</strong>" >Reserve Campsite</a>--> 
+                    <a href="" class="btn btn-info" data-toggle="modal" data-target="#reserveModal">Reserve Campsite</a>
                 </div>
 
             </div>
 
         </div>
-    </header><!-- END OF HEADER -->
 
+
+    </header><!-- END OF HEADER -->
+    <div class="modal fade" id="reserveModal" role="dialog" aria-labelledby="reserveModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-center modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header modal-header-bg">
+                    <h5 class="modal-title wht">Reserve a Campsite</h5>        
+                    <button type="button" class="close wht" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-group row align-items-center">
+                            <label for="numberOfCampers" class=" col-sm-6 col-form-label">Number Of Campers:</label>
+                            <div class="col-sm-6">
+                                <select class="form-control" name="numberOfCampers" id="numCampers">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                    <option value="">6</option>
+                                </select>
+                            </div>
+                        </div> <!--End of Row-->
+                        <div class="form-group row align-items-center">
+                            <label for="Date" class="col-sm-6 col-form-label">Date</label>
+                            <div class="col-sm-6 col-form-label ">
+                                <input class="form-control" type="date" name="date" id="date">
+                            </div>
+                        </div> <!--End of Row-->
+                        <div class="form-group row align-items-center">
+                            <label for="campsiteType" class=" col-sm-6 col-form-label">Camp Site Type: </label>
+                            <div class="col-sm-6">
+                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-success active">
+                                      <input type="radio" name="options" id="option1" autocomplete="off" checked> Active
+                                    </label>
+                                    <label class="btn btn-primary">
+                                      <input type="radio" name="options" id="option2" autocomplete="off"> Radio
+                                    </label>
+                                  </div>
+                            </div>
+                        </div> <!--End of Row-->
+                        <div class="form-group row align-items-center">
+                            <div class="col-sm-6">
+                                <button type="button" class="btn btn-secondary "data-dismiss="modal" aria-label="Close">Cancel</button>
+                                <button type="button" class="btn btn-primary">Search</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="30" /></a>  
