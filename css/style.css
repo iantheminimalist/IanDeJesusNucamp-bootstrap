@@ -61,6 +61,11 @@ header h2 {
 .carousel {
     border: solid #5637DD;
 }
+#carouselButton{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
 
 .modal-header-bg {
     background: #42275a;  /* fallback for old browsers */
