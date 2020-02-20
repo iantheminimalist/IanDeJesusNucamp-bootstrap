@@ -1,0 +1,77 @@
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3 {
+    /*font-family: 'Montserrat', sans-serif;*/
+    font-family: 'Lobster', cursive;
+}
+
+h2 {
+    color: #3046C5;
+}
+
+header h2 {color: #CEC8FF; }
+.cursiveBody h1 h2 h3{
+    font-family: 'Lobster', cursive;
+}
+.bg-footer{
+    background: linear-gradient(to right, #141e30, #243b55); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 20px 0;
+}
+.site-footer{
+    background-image: linear-gradient(#b7a8f8, white);
+    padding: 20px 0px;
+}
+.tab-content {
+    border: 1px solid #DDD;
+    border-top: none;
+    padding: 10px;
+}
+.jumbotron {
+    padding: 30px;
+    background: linear-gradient(to right, #141e30, #243b55); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 0;
+    color: white;
+}
+.navbar{
+    background-color: #901CAD !important;
+}
+.row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
+}
+
+.img-header{
+    background-image: url('https://res.cloudinary.com/dvdqlvy48/image/upload/v1579728322/santa-monica-2628912_1280.jpg');
+    height: 100%;
+}
+/** Shortcut to making things a pointer **/
+.pointer{
+    cursor: pointer;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel {
+    border: solid #5637DD;
+}
+#carouselButton{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.modal-header-bg {
+    background: #42275a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #734b6d, #42275a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #734b6d, #42275a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+ .wht{
+    color: white;
+}
+
