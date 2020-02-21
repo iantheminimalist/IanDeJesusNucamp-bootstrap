@@ -7,13 +7,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
   
-    <!-- Additional CSS must be placed after Bootstrap CSS -->
-    <!-- Note: Keeping the Node_modules for practice when using nodes and offline use -->
-    <!--
+    <!-- build:css css/main.css -->
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
         <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-    -->
+        <link rel="stylesheet" href="css/style.css" />
+   <!-- endbuild -->
 
     <!-- JUST IN CASE -->
 
@@ -31,8 +30,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
     
     <!-- Additional CSS must be placed after Bootstrap CSS -->   
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/style.scss" />
+
+
 
     <title>NuCamp: A Better Way To Camp</title>
 </head>
@@ -356,14 +355,13 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
     <!-- Custom Scripts Goes Here -->
-    <script>
-        /** This function enables tooltip function "Reserve Campsite" header Button **/
-        $(function(){
-            $('[data-toggle="tooltip"]').tooltip()
-        });
-    </script>
-
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+    <!-- endbuild -->
+
 </body>
 
 </html>
