@@ -6,6 +6,9 @@ $color-dark: #60106b;
 $color-white: white;
 $color-dark:#141e30;
 $color-dkgrey:#243b55;
+$color-drPurple: #42275a;
+$color-lt-Pink: #734b6d;
+$color-teal:#17A2B8;
 $color-transparent-black: rgba(0, 0, 0, 0.5);
 
 header {
@@ -17,7 +20,7 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
-h1, h2, h3 {
+h1, h2, h3{
     /*font-family: 'Montserrat', sans-serif;*/
     font-family: 'Lobster', cursive;
 }
@@ -46,7 +49,7 @@ header h2 {color: #CEC8FF; }*/
 .jumbotron {
     padding: 30px;
     background: linear-gradient(to right,$color-dark, $color-dkgrey); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    margin: 0;
+    margin: 0 !important;
     color: white;
 }
 .navbar{
@@ -81,12 +84,19 @@ header h2 {color: #CEC8FF; }*/
 }
 
 .modal-header-bg {
-    background: #42275a;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #734b6d, #42275a);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #734b6d, #42275a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: $color-drPurple;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, $color-lt-Pink,  $color-drPurple);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, $color-lt-Pink,  $color-drPurple); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
 }
+.modal-header{
+    background: $color-teal;
+    h2, h3{
+        color: $color-white;
+    }
+
+}
  .wht{
-    color: white;
+    color: $color-white;
 }
 

@@ -34,7 +34,7 @@ header h2 {color: #CEC8FF; }*/
   padding: 30px;
   background: linear-gradient(to right, #141e30, #243b55);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  margin: 0;
+  margin: 0 !important;
   color: white; }
 
 .navbar {
@@ -71,6 +71,11 @@ header h2 {color: #CEC8FF; }*/
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #734b6d, #42275a);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+
+.modal-header {
+  background: #17A2B8; }
+  .modal-header h2, .modal-header h3 {
+    color: white; }
 
 .wht {
   color: white; }

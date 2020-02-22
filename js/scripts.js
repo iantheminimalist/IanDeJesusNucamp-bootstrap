@@ -16,3 +16,12 @@ $(function() {
 $(function(){
     $('[data-toggle="tooltip"]').tooltip()
 });
+
+$("#reserveButton").click(function(){
+    $("#reserveModal").modal();
+});
+
+$("#loginButton").click(function(){
+        $("#loginModal").modal();
+});
+
